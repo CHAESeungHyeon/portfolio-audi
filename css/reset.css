@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+  font-family: "AudiType";
+  src: url("../font/AudiTypeVF_4.04.woff2") format("woff2");
+  font-weight: 100 900;   /* ← 중요: 범위로 선언 */
+  font-stretch: 75% 125%; /* wdth 축이 있을 경우 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gmarketbold";
+  src: url("../font/GmarketSansTTFBold.ttf") format("ttf");
+  font-style: normal;
+    font-weight: normal;
+    }
+@font-face {
+  font-family: "gmarketmedium";
+  src: url("../font/GmarketSansTTFMedium.ttf") format("ttf");
+  font-style: normal;
+    font-weight: normal;
+    }
+@font-face {
+  font-family: "gmarketlight";
+  src: url("../font/GmarketSansTTFLight.ttf") format("ttf");
+  font-style: normal;
+    font-weight: normal;
+    }
+
+    
+    *{
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+      /* outline: 1px solid rgba(255,0,0,0.5); */
+    }
+    
+body{
+  background-color: #101319;
+
+}
+
+ul,li{
+  list-style: none;
+}
+a{text-decoration: none;
+}
+
+button{
+  border: none;
+  outline: none;
+}
+
+.container{
+  font-family: "AudiType";
+  width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+

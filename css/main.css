@@ -1,0 +1,145 @@
+/* top Banner */
+/* top */
+#topBanner{
+  width: 100%;
+  min-width: 1200px;
+  height: 974px;
+  background: url(../img/topbanner.png) center/cover; 
+}
+#topBanner .container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 560px;
+background-color: transparent;
+padding: 0;
+}
+#topBanner .top{
+margin-top: 24px;
+}
+
+
+#topBanner .top h1, #topBanner .top h2{
+  color: #111;
+  font-family: 'AudiType';
+  font-variation-settings: "wght" 100,
+  "wdth" 130;
+}
+
+#topBanner .top >h2{
+  font-size: 40px;
+}
+#topBanner .top > h1{
+  margin-top: 24px;
+  margin-left: 30px;
+  font-size: 80px;
+}
+/* ======================================================= */
+
+/* topBanner bottom */
+#topBanner .bottom{
+  position: relative;
+}
+
+#topBanner .bottom h1{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ======================================================= */
+
+/* topBanner bottom button */
+#topBanner .bottom .button {
+  display: flex;
+  gap: 30px;
+}
+#topBanner .bottom .button .make{
+  background-color: #111;
+}
+
+#topBanner .bottom a{
+  font-size: 16px;
+  border: 1px solid #fff;
+  padding: 16px 32px;
+  display: flex;
+  
+}
+
+#topBanner .bottom img{
+  width: 24px;
+  margin-right: 12px;
+}
+
+
+/* ======================================================= */
+
+/* topBanner bottom click */
+
+#topBanner .click{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  left: 100%;
+}
+
+#topBanner .click li{
+  width: 12px;
+  height: 12px;
+  background-color: #888;
+  border-radius: 50%;
+}
+
+#topBanner .click .active{
+  background-color: #fff;
+}
+
+
+/* ======================================================= */
+
+/* modelCardBanner */
+#modelCardBanner{
+  width: 100%;
+  min-width: 1200px;
+  height: 1130px;
+}
+
+#modelCardBanner .container{
+  display: flex;
+  flex-direction: column;
+}
+
+#modelCardBanner .model{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+#modelCardBanner .model .modelCard{
+  width: calc((100% - 80px) / 3);
+  background-color: #2B2B2F;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#modelCardBanner .modelCard ul{
+  display: flex;
+}
+
+
+#modelCardBanner .model .modelCard .text1{
+  font-size: 12px;
+  height: 15px;
+  margin-bottom: 8px;
+}
+#modelCardBanner .model .modelCard .text2{
+  font-size: 24px;
+}
+
+#modelCardBanner .model .modelCard img{
+  width: 310px;
+}
