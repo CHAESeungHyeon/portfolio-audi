@@ -12,7 +12,7 @@
   align-items: start;
   gap: 560px;
 background-color: transparent;
-padding: 0;
+padding: 0 20px;
 }
 #topBanner .top{
 margin-top: 24px;
@@ -90,6 +90,7 @@ margin-top: 24px;
   height: 12px;
   background-color: #888;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #topBanner .click .active{
@@ -103,43 +104,127 @@ margin-top: 24px;
 #modelCardBanner{
   width: 100%;
   min-width: 1200px;
-  height: 1130px;
+  height: 1160px;
 }
 
 #modelCardBanner .container{
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
+}
+#modelCardBanner .container h2{
+padding: 130px 0 80px;
+font-size: 36px
 }
 
-#modelCardBanner .model{
+#modelCardBanner  .model{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
 }
-#modelCardBanner .model .modelCard{
+#modelCardBanner .model  .modelCard{
   width: calc((100% - 80px) / 3);
   background-color: #2B2B2F;
   height: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  position: relative;
 }
-#modelCardBanner .modelCard ul{
+
+#modelCardBanner .container .modelCard .card{
   display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 30px;
+  top: 17px;
 }
 
 
-#modelCardBanner .model .modelCard .text1{
+#modelCardBanner .container .model .modelCard .card .text1{
   font-size: 12px;
   height: 15px;
   margin-bottom: 8px;
 }
-#modelCardBanner .model .modelCard .text2{
+#modelCardBanner .container .model .modelCard .card .text2{
   font-size: 24px;
 }
 
-#modelCardBanner .model .modelCard img{
+#modelCardBanner .container .model .modelCard img{
   width: 310px;
+  margin: 128px 30px 0;
 }
+
+#modelCardBanner .container .model .modelCard span{
+  font-size: 16px;
+  border: 1px solid #fff;
+  width: 310px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 47px 30px 40px;
+}
+
+/* modelCardBanner click */
+
+#modelCardBanner > .container > .click{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+#modelCardBanner .container .click > li{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #888;
+}
+
+#modelCardBanner .container .click > .active{
+  background-color: #fff;
+}
+
+
+/* ======================================================= */
+
+/* middleBanner */
+#middleBanner{
+  width: 100%;
+  min-width: 1200px;
+  background: url(../img/middle\ banner.png) center/cover;
+  height: 908px;
+}
+
+#middleBanner .container{
+padding: 142px 20px;
+}
+
+#middleBanner .txtbox{
+  display: flex;
+  flex-direction: column;
+}
+#middleBanner .txtbox h1{
+  font-size: 50px;
+  font-weight: normal;
+}
+#middleBanner .txtbox .submit{
+  font-size: 20px;
+  font-weight: normal;
+  margin: 35px 0;
+}
+#middleBanner .txtbox .button{
+  background-color: #505067;
+  border-radius: 85px;
+  cursor: pointer;
+  width: 138px;
+  padding: 14px 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
