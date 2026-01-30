@@ -9,10 +9,8 @@
 #topBanner .container{
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 560px;
-background-color: transparent;
-padding: 0 20px;
+  gap: 540px;
+padding: 0;
 }
 #topBanner .top{
 margin-top: 24px;
@@ -21,9 +19,7 @@ margin-top: 24px;
 
 #topBanner .top h1, #topBanner .top h2{
   color: #111;
-  font-family: 'AudiType';
-  font-variation-settings: "wght" 100,
-  "wdth" 130;
+  font-variation-settings: "wght" 100, "wdth" 130;
 }
 
 #topBanner .top >h2{
@@ -37,9 +33,6 @@ margin-top: 24px;
 /* ======================================================= */
 
 /* topBanner bottom */
-#topBanner .bottom{
-  position: relative;
-}
 
 #topBanner .bottom h1{
   font-size: 50px;
@@ -54,16 +47,16 @@ margin-top: 24px;
   display: flex;
   gap: 30px;
 }
-#topBanner .bottom .button .make{
-  background-color: #111;
-}
 
 #topBanner .bottom a{
   font-size: 16px;
   border: 1px solid #fff;
   padding: 16px 32px;
   display: flex;
-  
+}
+#topBanner .bottom .button .make{
+  background-color: #111;
+  border: none;
 }
 
 #topBanner .bottom img{
@@ -81,8 +74,7 @@ margin-top: 24px;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  position: absolute;
-  left: 100%;
+  margin-top: 37px;
 }
 
 #topBanner .click li{
@@ -114,7 +106,7 @@ margin-top: 24px;
 }
 #modelCardBanner .container h2{
 padding: 130px 0 80px;
-font-size: 36px
+font-size: 36px;
 }
 
 #modelCardBanner  .model{
@@ -156,7 +148,7 @@ font-size: 36px
   margin: 128px 30px 0;
 }
 
-#modelCardBanner .container .model .modelCard span{
+#modelCardBanner .container .model .modelCard a{
   font-size: 16px;
   border: 1px solid #fff;
   width: 310px;
@@ -201,7 +193,7 @@ font-size: 36px
 }
 
 #middleBanner .container{
-padding: 142px 20px;
+  padding: 142px 20px;
 }
 
 #middleBanner .txtbox{
@@ -226,5 +218,109 @@ padding: 142px 20px;
   text-align: center;
   font-size: 16px;
   font-weight: 300;
+  white-space: nowrap;
+}
+
+
+/* ======================================================= */
+/* middleCard */
+#middleCard{
+  width: 100%;
+  min-width: 1200px;
+}
+#middleCard .container h1{
+  text-align: center;
+  font-size: 46px;
+  padding: 108px 0 70px;
+}
+
+#middleCard .serviceCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+#middleCard .serviceCard article{
+  position: relative;
+}
+#middleCard .serviceCard article .serviceTxt{
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 36px;
+  white-space: nowrap;
+  font-variation-settings: "wgth" 100, "wdth" 130;
+  font-family: "AudiType", "gmarketM";
+}
+#middleCard .serviceCard article .serviceTxt a{
+  font-size: 18px;
+  margin-top: 16px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  font-weight: 300;
+  font-family: "AudiType";
+}
+
+#middleCard .serviceCard img{
+  width: 500px;
+}
+
+
+
+
+
+/* ======================================================= */
+/* bottomContent */
+#bottomContent{
+  width: 100%;
+  min-width: 1200px;
+}
+
+#bottomContent .container h1{
+  text-align: center;
+  font-size: 36px;
+  padding: 60px 0 120px;
+}
+#bottomContent .NewsCard{
+  display: flex;
+  justify-content: center;
+  gap: 78px;
+  height: 556px;
+}
+
+#bottomContent .NewsCard .Card img, #bottomContent .NewsCard .Card h3, #bottomContent .NewsCard .Card span{
+  margin-bottom: 30px;
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+}
+#bottomContent .NewsCard .Card span{
+  font-size: 15px;
+  color: #aaa;
+  margin-bottom: 37px;
+  display: inline-block;
+}
+
+#bottomContent .NewsCard .Card:nth-child(2) span{
+  margin-bottom: 19px;
+}
+
+#bottomContent .NewsCard .Card a{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#bottomContent img{
+  width: 556px;
 }
 

@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
 @font-face {
   font-family: "AudiType";
   src: url("../font/AudiTypeVF_4.04.woff2") format("woff2");
   font-weight: 100 900;   /* ← 중요: 범위로 선언 */
   font-stretch: 75% 125%; /* wdth 축이 있을 경우 */
   font-style: normal;
-}
-
+  /* unicode-range: U+0061-007A, U+0041-005A, U+0030-0039; 기본 라틴 + 숫자 */
+  }
 @font-face {
-  font-family: "gmarketbold";
-  src: url("../font/GmarketSansTTFBold.ttf") format("ttf");
+  font-family: "gmarketB";
+  src: url("../font/GmarketSansBold.woff") format("woff");
+  font-style: normal;
+    font-weight: normal;
+    /* unicode-range: U+AC00-D7A3; 한글 음절 */
+    }
+@font-face {
+  font-family: "gmarketM";
+  src: url("../font/GmarketSansMedium.woff") format("woff");
   font-style: normal;
     font-weight: normal;
     }
 @font-face {
-  font-family: "gmarketmedium";
-  src: url("../font/GmarketSansTTFMedium.ttf") format("ttf");
-  font-style: normal;
-    font-weight: normal;
-    }
-@font-face {
-  font-family: "gmarketlight";
-  src: url("../font/GmarketSansTTFLight.ttf") format("ttf");
+  font-family: "gmarketL";
+  src: url("../font/GmarketSansLight.woff") format("woff");
   font-style: normal;
     font-weight: normal;
     }
@@ -35,10 +34,11 @@
       /* outline: 1px solid rgba(255,0,0,0.5); */
     }
     
-body{
-  background-color: #101319;
-
-}
+    body{
+      background-color: #101319;
+      font-variation-settings: "wgth" 100, "wdth" 130;
+      font-family: "AudiType";
+      }
 
 ul,li{
   list-style: none;
@@ -52,7 +52,6 @@ button{
 }
 
 .container{
-  font-family: "AudiType";
   width: 1200px;
   margin: auto;
   padding: 100px 20px;
